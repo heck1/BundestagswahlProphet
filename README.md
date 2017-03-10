@@ -14,7 +14,7 @@ different survey institutes listed there.
 require(prophet)
 require(rvest)
 require(stringr)
-url <- "http://www.wahlrecht.de/umfragen/politbarometer/stimmung.htm"
+url <- "http://www.wahlrecht.de/umfragen/politbarometer.htm"
 
 
 mv <- read_html(url)
