@@ -55,3 +55,8 @@ forecast <- predict(m, future)
 plot(m, forecast)
 prophet_plot_components(m, forecast)
 ```
+
+
+Next Steps:
+  - average over all the available survey providers
+  - increase the length of the period for parties, where possible
