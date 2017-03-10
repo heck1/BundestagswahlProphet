@@ -44,17 +44,16 @@ df$y <- as.numeric(as.character(df$y))
 m <- prophet(df)
 
 future <- make_future_dataframe(m, periods = 10, freq = "month")
+forecast <- predict(m, future)
+plot(m, forecast)
+prophet_plot_components(m, forecast)
 ```
 ![alt tag](https://github.com/heck1/BundestagswahlProphet/blob/master/Rplot01.png?raw=true)
 
 
 As we can see, the AfD is projected to score around 12-15% in the upcoming elections...
 
-```
-forecast <- predict(m, future)
-plot(m, forecast)
-prophet_plot_components(m, forecast)
-```
+
 
 
 Next Steps:
